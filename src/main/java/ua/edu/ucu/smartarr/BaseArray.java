@@ -1,5 +1,7 @@
 package ua.edu.ucu.smartarr;
 
+import java.util.Arrays;
+
 // Base array for decorators
 public class BaseArray implements SmartArray {
     private Object[] objects;
@@ -11,7 +13,7 @@ public class BaseArray implements SmartArray {
 
     @Override
     public Object[] toArray() {
-        return this.objects;
+        return Arrays.copyOf(this.objects, this.objects.length);
     }
 
     @Override

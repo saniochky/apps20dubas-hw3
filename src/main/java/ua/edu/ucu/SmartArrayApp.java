@@ -54,21 +54,23 @@ public class SmartArrayApp {
         MyPredicate pr = new MyPredicate() {
             @Override
             public boolean test(Object t) {
-                return ((Student) t).getYear() == 2 && ((Student) t).getGPA() >= 4.0;
+                return ((Student) t).getYear() == 2 && ((Student) t).getGPA() >= 4;
             }
         };
 
         MyComparator cmp = new MyComparator() {
             @Override
             public int compare(Object o1, Object o2) {
-                return ((Student) o1).getSurname().compareTo(((Student) o2).getSurname());
+                return ((Student) o1).getSurname().compareTo(
+                        ((Student) o2).getSurname());
             }
         };
 
         MyFunction func = new MyFunction() {
             @Override
             public Object apply(Object t) {
-                return ((Student) t).getSurname() + " " + ((Student) t).getName();
+                return ((Student) t).getSurname() + " " +
+                        ((Student) t).getName();
             }
         };
 

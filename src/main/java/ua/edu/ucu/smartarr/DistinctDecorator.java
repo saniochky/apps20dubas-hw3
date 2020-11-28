@@ -13,7 +13,9 @@ public class DistinctDecorator extends SmartArrayDecorator {
 
         for (int i = 0; i < this.smartArray.size(); i++) {
             for (j = i + 1; j < this.smartArray.size(); j++) {
-                if (this.smartArray.toArray()[i].toString().equals(this.smartArray.toArray()[j].toString())) {
+                if (this.smartArray.toArray()[i].toString().equals(
+                        this.smartArray.toArray()[j].toString()
+                )) {
                     break;
                 }
             }
