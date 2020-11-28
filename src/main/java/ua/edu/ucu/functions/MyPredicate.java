@@ -5,6 +5,7 @@
  */
 package ua.edu.ucu.functions;
 
+
 /**
  *
  * @author Andrii_Rodionov
@@ -12,4 +13,5 @@ package ua.edu.ucu.functions;
 public interface MyPredicate {
 
     boolean test(Object t);
+
 }
